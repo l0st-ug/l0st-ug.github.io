@@ -62,6 +62,19 @@
   .navbar-nav  li a:hover {
       color: #1abc9c !important;
   }
+
+  /* lost animation */
+  .lost {
+    color: #ffffff;
+    -webkit-animation: 20s linear 0s infinite change forwards;
+  }
+  @-webkit-keyframes change {
+    0% { color: #ffffff; }
+    25% { color: #9966ff; }
+    50% { color: #00cc99; }
+    75% { color: #66ff33; }
+    100% { color: #ffffff; }
+  }
   </style>
 
 </head>
@@ -89,7 +102,9 @@
 
 <!-- First Container -->
 <div class="container-fluid bg-1 text-center" id="who" style="margin-top: 42px">
-  <h3 class="margin">Coming Soon</h3>
+  <h1 class="lost display-1"><b>L0ST</b></h1>
+  <h3 class="margin">Linux and Open Source Technologies users' group</h3>
+  <h3>Coming Soon</h3>
   <img src="logo.svg" class="img-responsive rounded-circle margin" style="display:inline" alt="Prem" width="250" height="250">
   <h3>Don't Drink and root ;)</h3>
   <br/>
